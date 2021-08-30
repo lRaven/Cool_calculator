@@ -1,7 +1,7 @@
 //функция для воспроизведения звуков, хранит все необходимые аудиофайлы под конкретные кнопки
-function playAudio(various) {
+function playAudio(hitsounds) {
 	let audio = new Audio;
-	switch (various) {
+	switch (hitsounds) {
 		case 1:
 			{
 				audio.src = "audio/1.mp3"
@@ -93,7 +93,7 @@ function playAudio(various) {
 
 //функция для ввода текста с кнопок в поле ввода
 function insert(num) {
-	document.form.textview.value = document.form.textview.value + num;
+	document.form.textview.value += num;
 }
 
 // функция перезаписывает в поле ввода строку на один символ короче, удаление последнего введённого символа
@@ -119,10 +119,10 @@ function calculate() {
 //получение всех кнопок
 let btn = document.querySelectorAll('.btn');
 btn.forEach(e => {
-	e.addEventListener('click', function (sounds) {
-		sounds = e.textContent;
+	e.addEventListener('click', (hitsounds) => {
+		hitsounds = e.textContent;
 		//разделение звукового сопровождения в зависимости от содержимого кнопок
-		switch (sounds) {
+		switch (hitsounds) {
 			case 'C':
 				{
 					playAudio();
