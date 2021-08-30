@@ -102,7 +102,7 @@ function back() {
 	document.form.textview.value = text.substring(0, text.length - 1);
 }
 
-//функция для матиматических расчётов
+//функция для математических расчётов
 function calculate() {
 	let text = document.form.textview.value,
 		result = document.querySelector('.res');
