@@ -1,4 +1,4 @@
 Простой калькулятор с небольшой особенностью в виде озвучки от Kuplinov Play :D
 =====================
-Ссылка на калькулятор: [клик](https://lraven.github.io/Cool_calculator/)
+Ссылка на калькулятор: [клик](https://lraven.github.io/Cool_calculator)
 ***
