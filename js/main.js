@@ -1,3 +1,4 @@
+'use strict';
 //функция для воспроизведения звуков, хранит все необходимые аудиофайлы под конкретные кнопки
 function playAudio(hitsounds) {
 	let audio = new Audio;
@@ -108,7 +109,7 @@ function calculate() {
 		result = document.querySelector('.res');
 	if (text) {
 		result.innerHTML = eval(text);
-		if (result.innerHTML == 'Infinity') {
+		if (result.innerHTML == 'Infinity' || result.innerHTML == '-Infinity' || result.innerHTML == 'NaN') {
 			setTimeout(() => {
 				playAudio('error');
 			}, 1000);
